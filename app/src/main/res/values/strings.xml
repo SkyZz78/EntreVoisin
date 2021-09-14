@@ -3,4 +3,12 @@
     <string name="tab_neighbour_title">My neighbours</string>
     <string name="tab_favorites_title">Favorites</string>
     <string name="activity_new_neighbour">New neighbour</string>
+    <string name="neighbour_img">neighbour img</string>
+    <string name="my_neighbour_title">My neighbour</string>
+    <string name="favorite_button">Favorite button</string>
+    <string name="location">icon location</string>
+    <string name="phone">Phone icon</string>
+    <string name="social_link">Earth icon</string>
+    <string name="A_propos">A propos de moi</string>
+    <string name="return_btn">Return button</string>
 </resources>

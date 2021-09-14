@@ -16,6 +16,10 @@ public interface NeighbourApiService {
      */
     List<Neighbour> getNeighbours();
 
+    //récupération des Neighbours mis en favoris
+
+    List<Neighbour> getFavoriteNeighbours();
+
     /**
      * Deletes a neighbour
      * @param neighbour
@@ -27,4 +31,8 @@ public interface NeighbourApiService {
      * @param neighbour
      */
     void createNeighbour(Neighbour neighbour);
+
+    //ajout d'un utilisateur en favoris
+
+    void toggleFavoriteNeighbour(Neighbour neighbour);
 }
