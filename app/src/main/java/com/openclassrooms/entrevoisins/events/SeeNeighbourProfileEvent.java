@@ -2,7 +2,7 @@ package com.openclassrooms.entrevoisins.events;
 
 import com.openclassrooms.entrevoisins.model.Neighbour;
 
-public class SeeNeighbourProfilEvent {
+public class SeeNeighbourProfileEvent {
 
     /**
      * Neighbour to show
@@ -10,7 +10,7 @@ public class SeeNeighbourProfilEvent {
 
     public Neighbour neighbour;
 
-    public SeeNeighbourProfilEvent(Neighbour neighbour) {
+    public SeeNeighbourProfileEvent(Neighbour neighbour) {
         this.neighbour = neighbour;
     }
 }

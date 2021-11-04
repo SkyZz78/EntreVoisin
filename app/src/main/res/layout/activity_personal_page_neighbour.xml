@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="20dp"
-                    android:src="@drawable/ic_star_border_white_24dp"
+                    android:src="@drawable/ic_star_border_yellow_24dp"
                     android:backgroundTint="#ffffff"
                     android:contentDescription="@string/favorite_button"
                     app:layout_constraintBottom_toBottomOf="@+id/neighbour_img"
@@ -62,73 +62,59 @@
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
-                android:layout_gravity="center" >
+                android:layout_gravity="center">
 
-                <TextView
-                    android:id="@+id/cardview_name"
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="30sp"
-                    tools:text="Nom" />
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/cardview_location_icon"
-                    android:layout_width="26dp"
-                    android:layout_height="26dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@android:color/transparent"
-                    android:tint="@color/colorAccent"
-                    android:contentDescription="@string/location"
-                    app:srcCompat="@drawable/baseline_location_on_24" />
+                    <TextView
+                        android:id="@+id/cardview_name"
+                        style="@style/TitleviewStyle"
+                        tools:text="Nom"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
 
-                <TextView
-                    android:id="@+id/cardview_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="60dp"
-                    android:textSize="20sp"
-                    tools:text="Localisation" />
+                    <View
+                        android:id="@+id/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorLine"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview_name"/>
 
-                <ImageView
-                    android:id="@+id/cardview_phone_icon"
-                    android:layout_width="26dp"
-                    android:layout_height="26dp"
-                    android:layout_marginTop="115dp"
-                    android:tint="@color/colorAccent"
-                    android:contentDescription="@string/phone"
-                    app:srcCompat="@drawable/baseline_phone_24" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line_view">
 
-                <TextView
-                    android:id="@+id/cardview_phone_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="115dp"
-                    android:textSize="20sp"
-                    tools:text="Contact" />
+                        <TextView
+                            android:id="@+id/cardview_location"
+                            style="@style/TextviewStyle"
+                            android:drawableStart="@drawable/baseline_location_on_24"
+                            tools:text="Localisation" />
 
-                <ImageView
-                    android:id="@+id/cardview_link_icon"
-                    android:layout_width="26dp"
-                    android:layout_height="26dp"
-                    android:layout_marginTop="170dp"
-                    android:tint="@color/colorAccent"
-                    android:contentDescription="@string/social_link"
-                    app:srcCompat="@drawable/outline_language_24" />
+                        <TextView
+                            android:id="@+id/cardview_phone_number"
+                            style="@style/TextviewStyle"
+                            android:drawableStart="@drawable/baseline_phone_24"
+                            tools:text="Contact" />
 
-                <TextView
-                    android:id="@+id/neighbour_link_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="15dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="170dp"
-                    android:textSize="20sp"
-                    tools:text="Site web"
-                    />
-                <!--android:drawableStart="@drawable/outline_language_24" -->
+                        <TextView
+                            android:id="@+id/neighbour_link_name"
+                            style="@style/TextviewStyle"
+                            android:drawableStart="@drawable/outline_language_24"
+                            tools:text="Site web" />
+
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+
 
             </android.support.v7.widget.CardView>
 
@@ -137,24 +123,46 @@
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center" >
 
-                <TextView
-                    android:id="@+id/cardview_about"
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="30sp"
-                    android:text="@string/A_propos" />
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/cardview_about_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:textSize="20sp"
-                    tools:text="Ma description de fou malade" />
+                    <TextView
+                        android:id="@+id/cardview_about"
+                        style="@style/TitleviewStyle"
+                        android:text="@string/A_propos"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <View
+                        android:id="@+id/line_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorLine"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview_about"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line_view2">
+
+                        <TextView
+                            android:id="@+id/cardview_about_profile"
+                            style="@style/TextviewStyle"
+                            tools:text="Ma description de fou malade" />
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
 
             </android.support.v7.widget.CardView>
 

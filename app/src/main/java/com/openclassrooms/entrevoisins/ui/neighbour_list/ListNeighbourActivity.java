@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 
 import com.openclassrooms.entrevoisins.R;
-import com.openclassrooms.entrevoisins.events.SeeNeighbourProfilEvent;
+import com.openclassrooms.entrevoisins.events.SeeNeighbourProfileEvent;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -52,7 +52,7 @@ public class ListNeighbourActivity extends AppCompatActivity {
 
     //Methode d'ouverture des détails du profil d'un neighbour
     @Subscribe
-    public void onNeighbourPersonalPage(SeeNeighbourProfilEvent event) {
+    public void onNeighbourDetails(SeeNeighbourProfileEvent event) {
         Intent intent = new Intent(this, NeighbourPersonalPageActivity.class);
         intent.putExtra("neighbour",event.neighbour);
         startActivity(intent);

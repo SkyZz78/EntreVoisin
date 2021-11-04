@@ -9,8 +9,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.not;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
@@ -44,6 +47,15 @@ public class NeighbourServiceTest {
     }
 
     @Test
+    public void changeFavoriteWithSuccess() {
+        List<Neighbour> neighbours = service.getNeighbours();
+        Neighbour neighbour = neighbours.get(0);
+        boolean isFavorite = neighbour.isFavoris();
+        service.toggleFavoriteNeighbour(neighbour);
+        assertTrue(neighbour.isFavoris()!= isFavorite) ;
+    }
+
+    @Test
     public void getFavoriteNeighboursWithSuccess() {
         List<Neighbour> neighbours = service.getNeighbours();
         neighbours.get(0).setFavoris(true);
@@ -52,12 +64,6 @@ public class NeighbourServiceTest {
         assertTrue(favNeighbours.get(0).isFavoris());
     }
 
-    @Test
-    public void changeFavoriteWithSuccess() {
-        List<Neighbour> neighbours = service.getNeighbours();
-        Neighbour neighbour = neighbours.get(0);
-        boolean isFavorite = neighbour.isFavoris();
-        service.toggleFavoriteNeighbour(neighbour);
-        assertTrue(neighbour.isFavoris()!= isFavorite) ;
-    }
+
+
 }

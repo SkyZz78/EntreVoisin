@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/activity_personal_page_neighbour.xml" value="0.33" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/drawable/ic_star_border_white_24dp.xml" value="0.36203703703703705" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/drawable/ic_star_yellow_24dp.xml" value="0.36203703703703705" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/activity_list_neighbour.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/activity_personal_page_neighbour.xml" value="0.22" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/fragment_neighbour.xml" value="0.36666666666666664" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/fragment_neighbour_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Benjamin/Projet android/Entrevoisins/app/src/main/res/layout/personal_page_style.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

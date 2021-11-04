@@ -1,9 +1,9 @@
 package com.openclassrooms.entrevoisins.ui.neighbour_list;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.openclassrooms.entrevoisins.R;
+
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 import com.openclassrooms.entrevoisins.service.NeighbourApiService;
@@ -90,7 +91,7 @@ public class NeighbourPersonalPageActivity extends AppCompatActivity {
         if (myNeighbour.isFavoris()){
             myNeighbourFavoriteButton.setImageResource(R.drawable.ic_star_yellow_24dp);
         }
-        else {myNeighbourFavoriteButton.setImageResource(R.drawable.ic_star_border_white_24dp);}
+        else {myNeighbourFavoriteButton.setImageResource(R.drawable.ic_star_border_yellow_24dp);}
     }
 }
 
