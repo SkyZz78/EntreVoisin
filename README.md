@@ -5,7 +5,7 @@ Ce dépôt contient une mini-application pour le P3 du parcours **Grande École 
 INSTALLATION
 
 Download or clone this repository
-<img src="D:/Benjamin/Projet android/Entrevoisins/documentation/test.jpg"
+<img src="https://github.com/SkyZz78/Entrevoisin/blob/dev/documentation/test.PNG"
 	alt="Test"
 	Style="float: left; margin-right: 10px;" />
 
